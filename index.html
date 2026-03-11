@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Undangan Pernikahan</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Loading Screen -->
+<div id="loader">
+<div class="loader-text">Wedding Invitation</div>
+</div>
+
+<!-- Landing Page -->
+<section class="cover">
+
+<div class="cover-content">
+
+<img src="img/couple.jpg" class="cover-photo">
+
+<h1 class="couple-name">Harsa & Nafis</h1>
+
+<p class="date">20 Juni 2026</p>
+
+<button id="openInvite">Buka Undangan</button>
+
+</div>
+
+</section>
+
+<!-- Navbar -->
+<nav class="navbar">
+
+<a href="#couple">Mempelai</a>
+<a href="#story">Love Story</a>
+<a href="#event">Acara</a>
+<a href="#gallery">Galeri</a>
+<a href="#rsvp">RSVP</a>
+<a href="#gift">Amplop</a>
+
+</nav>
+
+<!-- Profil Mempelai -->
+<section id="couple" class="section">
+
+<h2>Mempelai</h2>
+
+<div class="couple-container">
+
+<div class="card">
+
+<img src="img/groom.jpg">
+
+<h3>Harsa</h3>
+
+<p>Putra dari</p>
+<p>Bapak Ahmad & Ibu Lina</p>
+
+</div>
+
+<div class="card">
+
+<img src="img/bride.jpg">
+
+<h3>NAfis</h3>
+
+<p>Putri dari</p>
+<p>Bapak Romadhon & Ibu Rina</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Countdown -->
+<section class="section countdown">
+
+<h2>Menuju Hari Bahagia</h2>
+
+<div id="countdown">
+
+<div><span id="days"></span>Hari</div>
+<div><span id="hours"></span>Jam</div>
+<div><span id="minutes"></span>Menit</div>
+<div><span id="seconds"></span>Detik</div>
+
+</div>
+
+</section>
+
+<!-- Love Story -->
+<section id="story" class="section">
+
+<h2>Love Story</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>2019</h3>
+<p>Pertemuan pertama</p>
+</div>
+
+<div class="timeline-item">
+<h3>2021</h3>
+<p>Mulai menjalin hubungan</p>
+</div>
+
+<div class="timeline-item">
+<h3>2025</h3>
+<p>Lamaran</p>
+</div>
+
+<div class="timeline-item">
+<h3>2026</h3>
+<p>Menuju pernikahan</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Detail Acara -->
+<section id="event" class="section">
+
+<h2>Detail Acara</h2>
+
+<div class="event-box">
+
+<h3>Akad Nikah</h3>
+<p>20 Juni 2026</p>
+<p>08:00 WIB</p>
+<p>Gedung Serbaguna Surabaya</p>
+
+<a href="https://maps.app.goo.gl/EbgWtDffr7nPfwfC6" target="_blank">Buka Google Maps</a>
+
+</div>
+
+<div class="event-box">
+
+<h3>Resepsi</h3>
+<p>20 Juni 2026</p>
+<p>11:00 WIB</p>
+<p>Gedung Serbaguna Surabaya</p>
+
+<a href="https://maps.app.goo.gl/EbgWtDffr7nPfwfC6" target="_blank">Buka Google Maps</a>
+
+</div>
+
+</section>
+
+<!-- Galeri -->
+<section id="gallery" class="section">
+
+<h2>Galeri</h2>
+
+<div class="gallery">
+
+<img src="img/1.jpg">
+<img src="img/2.jpg">
+<img src="img/3.jpg ">
+<img src="img/4.jpg">
+
+</div>
+
+</section>
+
+<!-- RSVP -->
+<section id="rsvp" class="section">
+
+<h2>Konfirmasi Kehadiran</h2>
+
+<form id="rsvpForm">
+
+<input type="text" name="nama" placeholder="Nama Anda" required>
+
+<input type="number" name="jumlah" placeholder="Jumlah Tamu">
+
+<select name="status">
+<option>Hadir</option>
+<option>Tidak Hadir</option>
+</select>
+
+<textarea name="ucapan" placeholder="Ucapan & Doa"></textarea>
+
+<button type="submit">Kirim</button>
+
+</form>
+
+</section>
+
+<!-- Buku Tamu -->
+<section class="section">
+
+<h2>Ucapan Tamu</h2>
+
+<div id="guestbook"></div>
+
+</section>
+
+<!-- Amplop Digital -->
+<section id="gift" class="section">
+
+<h2>Amplop Digital</h2>
+
+<div class="bank-card">
+
+<h3>BCA</h3>
+
+<p id="rekening">1234567890</p>
+
+<p>Andi Pratama</p>
+
+<button onclick="copyRek()">Copy Rekening</button>
+
+</div>
+
+<div class="ewallet">
+
+<h3>DANA</h3>
+
+<img src="qr.png" class="qr">
+
+<a href="qr.png" download>Download QR</a>
+
+</div>
+
+</section>
+
+<!-- Share -->
+<section class="section">
+
+<h2>Bagikan Undangan</h2>
+
+<button onclick="shareWA()">Share WhatsApp</button>
+<button onclick="copyLink()">Copy Link</button>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
